@@ -1,3 +1,4 @@
+require "httparty"
 require "http"
 require_relative "covid_testing/version"
 require_relative "covid_testing/api"
