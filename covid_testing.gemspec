@@ -6,7 +6,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Robaledo11"]
   spec.email         = ["Robertaledo22@gmail.com"]
 
-  spec.summary       = %q{covid testing}
+  spec.summary       = %q{covid_testing}
   spec.description   = %q{Provides CLI you can run to see infor about covid testing sites}
   spec.homepage      = "https://github.com/Robaledo11/covid_testing.git"
   spec.license       = "MIT"
@@ -24,7 +24,7 @@ Gem::Specification.new do |spec|
     `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   end
   #spec.bindir        = "exe"
-  spec.executables   = ["covid_testing_cli"]
+  spec.executables = ["covid_testing_cli"]
   spec.require_paths = ["lib"]
   spec.add_dependency "http"
   spec.add_development_dependency "bundler", "=~> 2.0"
