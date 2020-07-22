@@ -1,0 +1,4 @@
+{
+    "ruby.useLanguageServer": true,
+    "editor.minimap.enabled": false
+}

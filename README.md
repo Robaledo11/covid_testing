@@ -42,3 +42,11 @@ The gem is available as open source under the terms of the [MIT License](https:/
 ## Code of Conduct
 
 Everyone interacting in the CovidTesting project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/<github username>/covid_testing/blob/master/CODE_OF_CONDUCT.md).
+
+ #def list_choices
+    puts "/nfor detailed information on a site, typw it's number followd by enter"
+    puts "to view the list again type 'list' followed by enter"
+    puts "TO ecit simply type 'exit' followed by enter"
+
+   end
+end

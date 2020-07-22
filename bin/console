@@ -2,6 +2,8 @@
 
 require "bundler/setup"
 require "covid_testing"
+require "irb"
+IRB.start(__FILE__) 
 
 # You can add fixtures and/or initialization code here to make experimenting
 # with your gem easier. You can also use a different console, if you like.
@@ -10,5 +12,9 @@ require "covid_testing"
 # require "pry"
 # Pry.start
 
-require "irb"
-IRB.start(__FILE__)
+# response = HTTP.auth('https://covid-19-apis.postman.com/covid-19-testing-locations/california/')
+# body = response.body
+# @data = JSON.parse(body)
+
+
+ 
