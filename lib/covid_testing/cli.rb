@@ -1,5 +1,4 @@
 
-
 module CovidTesting
   
   class CLI
@@ -37,7 +36,7 @@ module CovidTesting
         if @input == 'list'
           list_covid_sites
         elsif valid?
-          puts CovidSite.find_by_number(@input).details
+          details(CovidSite.find_by_number(@input)) #puts self.details # puts CovidSite.find_by_number(@input).details
         else
           puts [
             "\nplease make a valid choice from the list of options available",
@@ -68,9 +67,18 @@ module CovidTesting
         "> If your want to exit the Covid 19 Test Site Finder App, just type 'exit'."
       ]
     end
+       
+    
+     def details(covid_site_results)
+       #CovidSite.find_by_number(@input)
+       #binding.pry
+            puts "#{covid_site_results.name} has #{covid_site_results.review_count} reviews with an average rating of #{covid_site_results.rating}." 
+            puts covid_site_results.location["display_address"] 
+            puts covid_site_results.display_phone  
+    end
     
     def valid?
-      @input.to_i.between?(1, CovidSite.all.length)
+      @input.to_i.between?(1, CovidSite.all.length)    #inputer is valid number
     end
 
     def goodbye
@@ -78,3 +86,4 @@ module CovidTesting
     end
   end
 end
+
